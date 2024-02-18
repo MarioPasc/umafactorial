@@ -1,0 +1,52 @@
+(-) git config user.name "MarioPasc"
+(-) git config user.email "mario.pg02@gmail.com"
+(1) git clone https://github.com/MarioPasc/umafactorial
+(-) cd umafactorial
+(-) git status
+(3) git add factorial.java
+(3) git commit -m "Initial commit"
+(-) git status
+(4) git add factorial.java
+(4) git commit -m "refactorización"
+(-) git status
+(5) git push origin main
+(5) git checkout -b recursivo
+(-) git status # Comprobamos que estamos en la rama recursivo
+(7) git add factorial.java
+(7) git commit -m "Implementación recursiva"
+(7) git push origin recursivo
+(-) git status
+(8) git checkout main
+(-) git status
+(10) git add factorial.java
+(10) git commit -m "Correccion numeros negativos"
+(10) git push origin main 
+(-) gitk --all
+(11) git checkout recursivo
+(-) git status
+(11) git add factorial.java
+(11) git commit -m "optimizacion"
+(12) git checkout main
+(12) git merge recursivo
+(-) gitk --all
+(13) git checkout -b refacIO
+(-) git status
+(14) git add factorial.java
+(14) git commit -m "refactorizacion de metodo entrada"
+(15) git stash
+(15) git checkout main
+(16) git add factorial.java
+(16) git commit -m "Cambio de long a biginteger"
+(16) git push origin main
+(16) git checkout refacIO
+(16) git stash pop
+(16) git add factorial.java
+(16) git commit -m "Refactorizacion de metodo de salida"
+(17) git checkout main
+(17) git merge refacIO
+(19) git add factorial.java
+(19) git commit -m "Mezcla de la rama refacIO"
+(19) git push origin main
+(21) git add comandos-git.txt
+(21) git commit -m "Adicion de historial de linea de comandos"
+(22) git push --all origin
